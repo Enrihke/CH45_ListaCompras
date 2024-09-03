@@ -11,14 +11,13 @@ function validarCantidad(){
 
     if (isNaN(txtNumber.value)){
         return false;
-    } //isNaN()
+    } // isNaN()
 
     if(Number(txtNumber.value)<=0){
         return false;
     }//<=0
 
     return true;
-
 }//validarCantidad()
 
 btnAgregar.addEventListener("click", function (event){
@@ -27,7 +26,7 @@ btnAgregar.addEventListener("click", function (event){
         txtNumber.style.border="";
         alertValidacionesTexto.innerHTML="";
         alertValidaciones.style.display="none";
-// Vaidar el nombre del producto
+// Validar el nombre del producto
     if(txtNombre.value.lenght<3){
         txtNombre.style.border="solid red medium";
     alertValidacionesTexto.innerHTML="El <strong>Nombre</strong> no es correcto. <br/>"
@@ -36,11 +35,11 @@ btnAgregar.addEventListener("click", function (event){
     }//if lenght<3
 
  //validar la cantidad
-    if (! validarCantidad()){
+    if (! validarcantidad()){
         txtNumber.style.border="solid red medium";
         alertValidacionesTexto.innerHTML+="La <strong>Cantidad</strong> no es correcta. <br/>";
         alertValidaciones.style.display="block";
-    }//! validarcantidad
+    }//validar cantidad
 
 }); //btnAgregar.addEventListener
 
