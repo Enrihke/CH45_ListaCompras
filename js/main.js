@@ -170,7 +170,6 @@ window.addEventListener("load", function(){
                     `<tr>
         cuerpoTabla.insertAdjacentHTML("beforeend", row);
     });// forEach
-    
 });//windows load
 
 
